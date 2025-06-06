@@ -1,0 +1,13 @@
+
+
+- name: Run NGINX reverse proxy container
+  docker_container:
+    name: proxy
+    image: nazimbz/tp-devops-simple-api-httpd:latest
+    #image: nginx:latest
+    ports:
+      - "80:80"
+    networks:
+      - name: my-network
+
+

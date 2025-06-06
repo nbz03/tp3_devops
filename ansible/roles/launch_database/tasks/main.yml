@@ -1,0 +1,10 @@
+- name: Run PostgreSQL container
+  docker_container:
+    name: mydb
+    image: nazimbz/tp-devops-simple-api-database
+    env:
+      POSTGRES_USER: usr
+      POSTGRES_PASSWORD: pwd
+      POSTGRES_DB: db
+    networks:
+      - name: my-network
