@@ -20,4 +20,4 @@ jobs:
 
       - name: Run deploy playbook
         run: |
-          ansible-playbook -i inventories/setup.yml deploy.yml
+          ansible-playbook -i inventories/setup.yml ansible/deploy.yml
